@@ -1,0 +1,180 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 1rem 3rem 10rem;
+  font-weight: 700;
+  color: rgb(228, 227, 227);
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+
+  &__logo-shape {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $color-grey-1;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(60%, -50%);
+    font-weight: 700;
+  }
+
+  &__logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-primary;
+  }
+
+  &-headings {
+    text-transform: uppercase;
+    color: rgb(228, 227, 227);
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+
+  &__main-content {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__icon {
+    fill: rgba(255, 255, 255, 0.301);
+    margin-right: 1.2rem;
+  }
+}
+
+.contact {
+  @include respond(phone) {
+    border-bottom: 1px solid rgba(122, 120, 120, 0.705);
+    text-align: center;
+    padding: 0 0 2rem 0;
+  }
+}
+.copyrights {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 0;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+}
+
+.contact__info {
+  display: flex;
+
+  @include respond(phone) {
+    justify-content: center;
+  }
+
+  &:not(:last-child) {
+    padding: 1.5rem 0 2rem;
+  }
+}
+
+.company {
+  @include respond(phone) {
+    border-bottom: 1px solid rgba(122, 120, 120, 0.705);
+    text-align: center;
+  }
+  &__container {
+    list-style-type: none;
+  }
+  &__links:link,
+  &__links:visited {
+    color: rgb(228, 227, 227);
+    display: block;
+    padding: 0.7rem 0;
+    font-weight: 500;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @include respond(phone) {
+    justify-self: center;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 1.4rem 2rem;
+    background-color: #c07950b9;
+    border: none;
+  }
+}
+
+.form {
+  border: 2px solid rgba(122, 120, 120, 0.705);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0 1rem;
+
+  @include respond(phone) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#mail {
+  padding: 1rem 1rem;
+  background-color: transparent;
+  border: none;
+  color: rgb(228, 227, 227);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::selection {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(228, 227, 227);
+  }
+
+  &::-webkit-input-placeholder {
+    color: #9c9897;
+    padding: 0 1rem;
+  }
+}
+
+.quicklinks {
+  @include respond(phone) {
+    border-bottom: 1px solid rgba(122, 120, 120, 0.705);
+    text-align: center;
+  }
+}
+
+.social-media-icons {
+  padding: 2rem 0 0;
+}
+
+.facebook__icon {
+  fill: rgb(7, 7, 245);
+  margin-right: 1rem;
+}
+
+.instagram__icon {
+  fill: rgb(180, 48, 152);
+  margin-right: 1rem;
+}
+
+.twitter__icon {
+  fill: rgb(47, 103, 255);
+}

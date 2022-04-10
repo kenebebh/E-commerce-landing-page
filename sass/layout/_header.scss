@@ -1,0 +1,59 @@
+// THE HEADER
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url(../img/header-image.png);
+  background-size: cover;
+  background-position: bottom;
+
+  &__content {
+    padding: 20rem 10rem;
+    color: #fff;
+
+    @include respond(phone) {
+      padding: 15rem 7rem;
+    }
+  }
+
+  &__paragraph {
+    width: 60rem;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      width: 45rem;
+    }
+
+    @include respond(phone) {
+      width: 30rem;
+    }
+  }
+}
+
+.new-line {
+  display: block;
+}
+
+.different {
+  color: rgb(76, 216, 76);
+}
+
+.shop-button {
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  color: $color-primary;
+  width: 17rem;
+  transition: all 0.1s;
+
+  display: flex;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.shop-text:hover {
+  color: $color-primary-dark;
+}

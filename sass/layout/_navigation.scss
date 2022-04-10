@@ -1,0 +1,253 @@
+// EVERYTHING IN THE NAVIGATION
+
+.logo {
+  &__box {
+    padding: 1rem 0.5rem;
+
+    @include respond(phone) {
+      padding: 0.5rem 0;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  &__shape {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(63, 7, 7, 0.651);
+    position: relative;
+
+    @include respond(phone) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(60%, -50%);
+    font-weight: 700;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}
+
+.toggle__button {
+  position: absolute;
+  right: 1rem;
+  top: 2.8rem;
+  padding: 0 0.5rem;
+
+  &,
+  &::before,
+  &::after {
+    width: 2.8rem;
+    height: 0.25rem;
+    background-color: rgba(122, 120, 120, 0.527);
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: -0.7rem;
+  }
+
+  &::after {
+    top: 0.7rem;
+  }
+}
+
+.bigger {
+  font-size: 1.8rem;
+
+  // @include respond(phone) {
+  //   font-size: 1.4rem;
+  // }
+}
+.smaller {
+  font-style: 1.4rem;
+  margin-left: -0.1rem;
+
+  // @include respond(phone) {
+  //   font-size: 1.2rem;
+  //   margin-left: 0;
+  // }
+}
+
+.nav {
+  &__container {
+    @include respond(phone) {
+      display: none;
+      width: 50%;
+      background-color: white;
+      position: absolute;
+      right: 30%;
+      transform: translate(60%, 10%);
+      border-radius: 2px;
+      padding: 2rem 0;
+      background-color: rgba(255, 255, 255, 0.486);
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &__itself {
+    display: inline-block;
+
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: #9c9897;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.1s;
+    padding: 0.5rem 1rem;
+
+    @include respond(phone) {
+      color: $color-primary;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  position: relative;
+
+  @include respond(phone) {
+    justify-content: flex-start;
+    padding: 1rem 5rem 1rem 2rem;
+  }
+}
+
+.nav--right {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+
+  @include respond(phone) {
+    justify-self: flex-end;
+  }
+}
+
+.cartcontainer {
+  position: relative;
+  padding: 0 2rem 0 1rem;
+
+  @include respond(phone) {
+    padding: 0 1rem 0 0.5rem;
+  }
+}
+
+.user-nav__notification {
+  font-size: 0.9rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: indianred;
+  color: #fff;
+  position: absolute;
+  top: -0.5rem;
+  left: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include respond(phone) {
+      padding: 0;
+      width: 80%;
+    }
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: rgba(233, 233, 233, 0.61);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    transition: all 0.2s;
+    width: 90%;
+
+    @include respond(phone) {
+      width: 90%;
+      padding: 0.7rem 1rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: rgba(233, 233, 233, 0.61);
+    position: absolute;
+    right: 3rem;
+
+    @include respond(phone) {
+      right: 4.1rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: scale(2);
+    }
+  }
+
+  .search__input::-webkit-input-placeholder {
+    color: #9c9897;
+  }
+}
+
+.user-photo {
+  width: 3rem;
+  height: 3rem;
+}

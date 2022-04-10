@@ -1,0 +1,27 @@
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.search__icon,
+.nav__icon {
+  fill: $color-grey-1;
+}
+
+.nav__icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.reasons__icon {
+  fill: #5a5757;
+}
+
+.shopping__icon {
+  fill: $color-primary;
+  margin-right: 1rem;
+
+  &:hover {
+    fill: $color-primary-dark;
+  }
+}

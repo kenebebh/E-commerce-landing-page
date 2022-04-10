@@ -1,0 +1,46 @@
+/* CATEGORIES CONTAINER EXTRA STYLES */
+
+.shoe-box {
+  position: relative;
+  padding: 1rem;
+
+  &__text {
+    position: absolute;
+    left: 1.5%;
+    bottom: 20%;
+    text-transform: uppercase;
+    font-style: 1.2rem;
+    padding: 1rem 1.5rem;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    @include respond(phone) {
+      left: 2.1%;
+      width: 25%;
+      line-height: 2rem;
+    }
+  }
+}
+
+.shoe {
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.shoe1-text {
+  background-color: #cfb2aa;
+}
+
+.shoe2-text {
+  background-color: #fff;
+}
+
+.shoe3-text {
+  background-color: #a7a7a7;
+}
+
+.shoe4-text {
+  background-color: rgba(166, 115, 86, 0.8);
+}
