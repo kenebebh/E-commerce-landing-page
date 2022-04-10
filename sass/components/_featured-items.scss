@@ -8,6 +8,11 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include respond(tab-port) {
+    padding: 1rem 3rem 1rem 1rem;
+    width: 50%;
+  }
+
   @include respond(phone) {
     width: 100%;
     padding: 1rem;
@@ -53,6 +58,11 @@
   height: 35rem;
   width: 48rem;
   border-radius: 20px;
+
+  @include respond(tab-port) {
+    height: 30rem;
+    width: 40rem;
+  }
 
   @include respond(phone) {
     height: 28rem;

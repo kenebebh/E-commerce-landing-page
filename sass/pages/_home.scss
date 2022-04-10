@@ -25,6 +25,10 @@
     align-items: center;
     background-color: rgba(231, 225, 218, 0.35);
 
+    @include respond(tab-port) {
+      padding: 3rem 1rem 5rem 0;
+    }
+
     @include respond(phone) {
       flex-direction: column;
       padding: 3rem 4rem;
@@ -35,15 +39,19 @@
 .testimonials {
   padding: 5rem 10rem;
 
+  @include respond(tab-port) {
+    padding: 5rem 20rem 10rem;
+  }
+
   @include respond(phone) {
-    padding: 2rem 0;
+    padding: 2rem 0 8rem;
   }
 
   &__container {
     display: flex;
     justify-content: space-around;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
     }
   }

@@ -7,6 +7,15 @@
   background-size: cover;
   background-position: bottom;
 
+  @include respond(tab-port) {
+    height: 70vh;
+  }
+
+  @include respond(tab-port) {
+    height: 85vh;
+    overflow: hidden;
+  }
+
   &__content {
     padding: 20rem 10rem;
     color: #fff;
