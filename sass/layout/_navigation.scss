@@ -98,14 +98,13 @@
 .nav {
   &__container {
     @include respond(phone) {
-      // display: none;
       opacity: 0;
       width: 100%;
-      height: 25vh;
+      height: 23rem;
       background-color: white;
       position: absolute;
       right: 50%;
-      transform: translate(50%, 0);
+      transform: translate(50%, -40%);
       border-radius: 2px;
       padding: 2rem 0;
       background-color: rgba(255, 255, 255, 0.486);
@@ -235,10 +234,6 @@
     background-color: rgba(233, 233, 233, 0.61);
     position: absolute;
     right: 3rem;
-
-    @include respond(phone) {
-      right: 4.1rem;
-    }
 
     &:focus {
       outline: none;
